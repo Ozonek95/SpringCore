@@ -3,9 +3,12 @@ package zadaniePierwsze.main;
 import java.math.BigDecimal;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
 import zadaniePierwsze.pakietCzwarty.User;
 import zadaniePierwsze.pakietDrugi.UserRepository;
 import zadaniePierwsze.pakietPierwszy.Logger;
+import zadaniePierwsze.pakietPiąty.NieChcemyTejKlasy;
 import zadaniePierwsze.pakietTrzeci.Calculator;
 
 /**
@@ -19,7 +22,9 @@ import zadaniePierwsze.pakietTrzeci.Calculator;
  *
  * @author Kacper Staszek
  */
-
+@ComponentScan(basePackages = {"zadaniePierwsze.pakietPierwszy", "zadaniePierwsze.pakietDrugi",
+    "zadaniePierwsze.pakietTrzeci", "zadaniePierwsze.pakietPiąty"},
+    excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = NieChcemyTejKlasy.class))
 class Main {
 
   public static void main(String[] args) {
