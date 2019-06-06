@@ -17,6 +17,8 @@ import zadaniePierwsze.pakietTrzeci.Calculator;
  * TODO: Kiedy program już działa, zauważ, że tworzymy ziarno "KlasyKtórejNieChcemy". Za pomocą
  *  @ComponentScan.Filter rozwiąż ten problem tak, żeby wciąż tworzyć ziarno KlasaKtoraChcemy.
  *
+ *  -https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/annotation/ComponentScan.html
+ *
  * @author Kacper Staszek
  */
 
