@@ -9,6 +9,8 @@ import org.springframework.context.support.AbstractApplicationContext;
  *    Spring używa wzorca Obserwator do wyzwalania akcji przy różnych zdarzeniach w ApplicationContext.
  *    Twoim zadaniem jest stworzenie trzech takich zdarzeń. Niech na przykład drukują coś na konsolę.
  *
+ *  -https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/ApplicationListener.html
+ *
  * @author Kacper Staszek
  */
 @ComponentScan
