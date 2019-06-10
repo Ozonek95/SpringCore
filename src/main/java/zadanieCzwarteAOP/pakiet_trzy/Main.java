@@ -6,6 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
+ * Zapoznamy się z bardzo ciekawym aspektem - @Around. Przejdź do klasy AroundAspekt.
  * @author Kacper Staszek
  */
 @ComponentScan
