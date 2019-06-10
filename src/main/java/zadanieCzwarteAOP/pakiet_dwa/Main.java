@@ -5,10 +5,16 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import zadanieCzwarteAOP.pakiet_dwa.człowieki.Człowiek;
+import zadanieCzwarteAOP.pakiet_dwa.samochody.Osobówka;
+import zadanieCzwarteAOP.pakiet_dwa.samochody.Tir;
 import zadanieCzwarteAOP.pakiet_dwa.zwierzaki.Kot;
 import zadanieCzwarteAOP.pakiet_dwa.zwierzaki.Pies;
 
 /**
+ * Poćwiczymy trochę tworzenie pointcut expression i dowiemy się czym jest @Pointcut.
+ *
+ * TODO:Przejdź do klasy aspects.PrzykładowyAspekt i postępuj zgodnie z instrukcją.
+ *
  * @author Kacper Staszek
  */
 @ComponentScan
@@ -20,12 +26,22 @@ class Main {
     Człowiek człowiek = context.getBean(Człowiek.class);
     Pies pies = context.getBean(Pies.class);
     Kot kot = context.getBean(Kot.class);
+    Tir tir = context.getBean(Tir.class);
+    Osobówka osobówka = context.getBean(Osobówka.class);
 
     człowiek.setZawódWykonywany("Stolarz");
 
     pies.setImie("Burek");
 
+    pies.getImie();
+
     kot.setImie("Mruczek");
+
+    osobówka.setMarka("Fiat");
+
+    tir.setMarka("Mercedes");
+
+    tir.getMarka();
 
     człowiek.getZawódWykonywany();
   }

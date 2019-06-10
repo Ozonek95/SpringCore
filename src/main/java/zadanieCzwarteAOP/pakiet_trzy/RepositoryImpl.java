@@ -1,4 +1,4 @@
-package zadanieCzwarteAOP;
+package zadanieCzwarteAOP.pakiet_trzy;
 
 import org.springframework.stereotype.Component;
 
