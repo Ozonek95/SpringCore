@@ -14,20 +14,18 @@ import org.springframework.stereotype.Component;
 class Aspekt {
 
   /**
-   * TODO: Przeczytaj akapit.
-   * Adnotacja @Before uruchomi się zawsze przed wywołaniem metody zdefiniowanej jako Join Point.
-   * Definiowanie Join Point odbywa się z pomocą pointcut expressions. Jest on na początku dość
-   * ciężki do swobodnego definiowania tego co chcemy, jednak wraz z praktyką jest coraz lepiej :)
-   * Na początek polecam wspierać się tymi artykułami:
-   *  -http://javainsimpleway.com/understanding-the-pointcut-expressions/
-   *  -https://howtodoinjava.com/spring-aop/aspectj-pointcut-expressions/
+   * TODO: Przeczytaj akapit. Adnotacja @Before uruchomi się zawsze przed wywołaniem metody
+   * zdefiniowanej jako Join Point. Definiowanie Join Point odbywa się z pomocą pointcut
+   * expressions. Jest on na początku dość ciężki do swobodnego definiowania tego co chcemy, jednak
+   * wraz z praktyką jest coraz lepiej :) Na początek polecam wspierać się tymi artykułami:
+   * -http://javainsimpleway.com/understanding-the-pointcut-expressions/
+   * -https://howtodoinjava.com/spring-aop/aspectj-pointcut-expressions/
    *
-   * TODO: Przeczytaj komentarze nad kolejnymi metodami.
-   *  Następnie odkomentuj adnotacje AspectJ'ya, uruchom program i zobacz działanie. jeżeli będzie Ci
-   *  wygodniej, po uruchomieniu zakomentuj linię spowrotem, bo po kolejnych przykładach wydruki na
-   *  konsolę mogą się zrobić mało czytelne.
+   * TODO: Przeczytaj komentarze nad kolejnymi metodami. Następnie odkomentuj adnotacje AspectJ'ya,
+   * uruchom program i zobacz działanie. jeżeli będzie Ci wygodniej, po uruchomieniu zakomentuj
+   * linię spowrotem, bo po kolejnych przykładach wydruki na konsolę mogą się zrobić mało czytelne.
    *
-   *  TODO: Po zapoznaniu się z działaniem odpowiednich aspektów przejdź do pakiet_dwa.
+   * TODO: Po zapoznaniu się z działaniem odpowiednich aspektów przejdź do pakiet_dwa.
    */
 
   //Uruchomi się przed egzekucją każdej publicznej metody z dowolnym typem zwracanym, zdefiniowaną
@@ -50,8 +48,9 @@ class Aspekt {
   //której nazwa zaczyna się od get z dowolną liczbą argumentów.
   //Dodatkowo używamy tu pierwszy raz JoinPoint. Daje on nam dostęp do informacji na temat wywołania metody.
   //Zachęcam do poczytania dokumentacji:
+
   /**
-   @see JoinPoint
+   * @see JoinPoint
    */
   //FIXME: Odkomentuj.
   //@Before("execution(* get*(..))")
