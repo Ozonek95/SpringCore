@@ -8,5 +8,8 @@ import org.aspectj.lang.annotation.Before;
  */
 @Aspect
 class SetterAspect {
-//@Before("execution(* set*)")
+@Before("execution(* set*)")
+  void przedSetterem(){
+  System.out.println("Przed setterem ");
+}
 }
