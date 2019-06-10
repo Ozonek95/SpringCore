@@ -1,5 +1,6 @@
 package zadanieCzwarteAOP.pakiet_trzy;
 
+import java.util.concurrent.ThreadLocalRandom;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,14 +11,14 @@ class RepositoryImpl implements Repository {
 
   @Override
   public boolean repoMethod() {
-    System.out.println("start");
+    System.out.println("rozpoczynam zapis");
     try {
-      Thread.sleep(2000);
+      Thread.sleep(ThreadLocalRandom.current().nextInt(5000));
     } catch (InterruptedException e) {
-      e.printStackTrace();
+      System.err.println(e.getMessage());
+      return false;
     }
-    System.out.println("end");
-
+    System.out.println("zapis zakończony");
     return true;
   }
 }
