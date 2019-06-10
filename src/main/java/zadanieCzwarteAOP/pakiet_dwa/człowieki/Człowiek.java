@@ -1,8 +1,11 @@
 package zadanieCzwarteAOP.pakiet_dwa.człowieki;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author Kacper Staszek
  */
+@Component
 public class Człowiek {
 
   private String zawódWykonywany;
@@ -13,5 +16,10 @@ public class Człowiek {
 
   public String getZawódWykonywany() {
     return zawódWykonywany;
+  }
+
+  public void wyrzucaWyjątek() throws Exception {
+    System.out.println("rzucam wyjątkiem");
+    throw new Exception("Człowiek przykładowy wyjątek");
   }
 }
