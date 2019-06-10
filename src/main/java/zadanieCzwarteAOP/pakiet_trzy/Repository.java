@@ -1,4 +1,4 @@
-package zadanieCzwarteAOP;
+package zadanieCzwarteAOP.pakiet_trzy;
 
 /**
  * @author Kacper Staszek

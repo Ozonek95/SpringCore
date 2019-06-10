@@ -1,4 +1,4 @@
-package zadanieCzwarteAOP;
+package zadanieCzwarteAOP.pakiet_trzy;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
