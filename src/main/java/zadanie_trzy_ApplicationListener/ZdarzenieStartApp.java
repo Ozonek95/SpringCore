@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @author Kacper Staszek
  */
 @Component
-class StartAppEvent implements ApplicationListener<ContextStartedEvent> {
+class ZdarzenieStartApp implements ApplicationListener<ContextStartedEvent> {
 
   @Override
   public void onApplicationEvent(ContextStartedEvent contextStartedEvent) {

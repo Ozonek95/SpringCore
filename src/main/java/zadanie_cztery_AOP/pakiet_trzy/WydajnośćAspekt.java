@@ -9,7 +9,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 /**
- * TODO: Stwórz aspekt, który zmierzy czas wykonywania metody z klasy RepositoryImpl.
+ * TODO: Stwórz aspekt, który zmierzy czas wykonywania metody z klasy RepozytoriumImpl.
  *  Ta klasa powinna mieć logger, który będzie wypisywał na konsolę jaka metoda została wykonana
  *  i ile czasu zajęło jej wykonanie.
  *  Wykorzystaj @Around.

@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
  * @author Kacper Staszek
  */
 @Component
-class RepositoryImpl implements Repository {
+class RepozytoriumImpl implements Repozytorium {
 
   @Override
-  public boolean repoMethod() {
+  public boolean metodaRepozytorium() {
     System.out.println("rozpoczynam zapis");
     try {
       Thread.sleep(ThreadLocalRandom.current().nextInt(5000));

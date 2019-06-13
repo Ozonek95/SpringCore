@@ -17,7 +17,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 class Main {
 
   public static void main(String[] args) {
-    ApplicationContext context = new AnnotationConfigApplicationContext(DataTransferConfig.class);
-    context.getBean(DataTransferService.class).transferData();
+    ApplicationContext kontekst = new AnnotationConfigApplicationContext(KonfiguracjaTransferDanych.class);
+    kontekst.getBean(TransferDanychSerwis.class).transferDanych();
   }
 }

@@ -1,20 +1,20 @@
 package zadanie_cztery_AOP.pakiet_cztery.repozytoria;
 
 import org.springframework.stereotype.Repository;
-import zadanie_cztery_AOP.pakiet_cztery.model.Artykuł;
+import zadanie_cztery_AOP.pakiet_cztery.model.Użytkownik;
 import zadanie_cztery_AOP.pakiet_cztery.serwisy.Loggable;
 
 /**
- * Implementacja repozytorium Artykułów.
+ * Implementacja repozytorium Użytkowników.
  *
  * @author Kacper Staszek
  */
 @Repository
-public class MyArticleRepository implements MyRepository<Artykuł> {
+class RepozytoriumUżytkowników implements MojeRepozytorium<Użytkownik> {
 
   @Override
   @Loggable
-  public boolean zapisz(Artykuł artykuł) {
+  public boolean zapisz(Użytkownik użytkownik) {
     return true;
   }
 }

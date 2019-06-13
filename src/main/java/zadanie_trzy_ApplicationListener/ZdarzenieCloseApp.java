@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @author Kacper Staszek
  */
 @Component
-class CloseAppEvent implements ApplicationListener<ContextClosedEvent> {
+class ZdarzenieCloseApp implements ApplicationListener<ContextClosedEvent> {
 
   @Override
   public void onApplicationEvent(ContextClosedEvent contextClosedEvent) {

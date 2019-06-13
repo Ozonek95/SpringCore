@@ -16,10 +16,10 @@ import org.springframework.context.support.AbstractApplicationContext;
 @ComponentScan
 class Main {
   public static void main(String[] args) {
-    AbstractApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
-    context.start();
-    context.stop();
-    context.start();
-    context.close();
+    AbstractApplicationContext kontekst = new AnnotationConfigApplicationContext(Main.class);
+    kontekst.start();
+    kontekst.stop();
+    kontekst.start();
+    kontekst.close();
   }
 }

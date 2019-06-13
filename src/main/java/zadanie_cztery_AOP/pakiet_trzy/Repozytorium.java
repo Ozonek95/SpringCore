@@ -3,6 +3,6 @@ package zadanie_cztery_AOP.pakiet_trzy;
 /**
  * @author Kacper Staszek
  */
-public interface Repository {
-  boolean repoMethod();
+public interface Repozytorium {
+  boolean metodaRepozytorium();
 }

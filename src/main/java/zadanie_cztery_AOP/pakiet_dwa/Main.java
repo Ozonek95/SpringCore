@@ -13,7 +13,7 @@ import zadanie_cztery_AOP.pakiet_dwa.zwierzaki.Pies;
 /**
  * Poćwiczymy trochę tworzenie pointcut expression i dowiemy się czym jest @Pointcut.
  *
- * TODO:Przejdź do klasy aspects.PrzykładowyAspekt i postępuj zgodnie z instrukcją.
+ * TODO:Przejdź do klasy aspekty.PrzykładowyAspekt i postępuj zgodnie z instrukcją.
  *
  * @author Kacper Staszek
  */
@@ -22,12 +22,12 @@ import zadanie_cztery_AOP.pakiet_dwa.zwierzaki.Pies;
 class Main {
 
   public static void main(String[] args) {
-    ApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
-    Człowiek człowiek = context.getBean(Człowiek.class);
-    Pies pies = context.getBean(Pies.class);
-    Kot kot = context.getBean(Kot.class);
-    Tir tir = context.getBean(Tir.class);
-    Osobówka osobówka = context.getBean(Osobówka.class);
+    ApplicationContext kontekst = new AnnotationConfigApplicationContext(Main.class);
+    Człowiek człowiek = kontekst.getBean(Człowiek.class);
+    Pies pies = kontekst.getBean(Pies.class);
+    Kot kot = kontekst.getBean(Kot.class);
+    Tir tir = kontekst.getBean(Tir.class);
+    Osobówka osobówka = kontekst.getBean(Osobówka.class);
 
     człowiek.setZawódWykonywany("Stolarz");
 

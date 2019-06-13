@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 class LoggerImpl implements Logger {
 
   @Override
-  public void log(String message) {
-    System.out.println("Logging message: "+message);
+  public void log(String wiadomość) {
+    System.out.println("Loguję wiadomość: "+wiadomość);
   }
 }

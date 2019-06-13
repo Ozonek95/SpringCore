@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import zadanie_cztery_AOP.pakiet_cztery.model.Artykuł;
 import zadanie_cztery_AOP.pakiet_cztery.model.Użytkownik;
-import zadanie_cztery_AOP.pakiet_cztery.repozytoria.MyRepository;
+import zadanie_cztery_AOP.pakiet_cztery.repozytoria.MojeRepozytorium;
 
 /**
  * Spring AOP umożliwia uruchamianie pewnych Aspektów nad metodami o danej adnotacji.
@@ -35,12 +35,12 @@ import zadanie_cztery_AOP.pakiet_cztery.repozytoria.MyRepository;
 class Main {
 
   public static void main(String[] args) {
-    ApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
-    var myArticleRepository = (MyRepository<Artykuł>) context.getBean("myArticleRepository");
-    var myUserRepository = (MyRepository<Użytkownik>) context.getBean("myUserRepository");
+    ApplicationContext kontekst = new AnnotationConfigApplicationContext(Main.class);
+    var repozytoriumArtykułów = (MojeRepozytorium<Artykuł>) kontekst.getBean("repozytoriumArtykułów");
+    var repozytoriumUżytkowników = (MojeRepozytorium<Użytkownik>) kontekst.getBean("repozytoriumUżytkowników");
 
-    myUserRepository.zapisz(new Użytkownik("Kacper"));
-    myArticleRepository.zapisz(new Artykuł("O pogodzie xD"));
+    repozytoriumUżytkowników.zapisz(new Użytkownik("Kacper"));
+    repozytoriumArtykułów.zapisz(new Artykuł("O pogodzie xD"));
   }
 
 }

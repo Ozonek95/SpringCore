@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
  * @author Kacper Staszek
  */
 @Repository
-public interface MyRepository<T> {
+public interface MojeRepozytorium<T> {
   boolean zapisz(T obiekt);
 }

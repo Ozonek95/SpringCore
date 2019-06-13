@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @author Kacper Staszek
  */
 @Component
-class StopAppEvent implements ApplicationListener<ContextStoppedEvent> {
+class ZdarzenieStopApp implements ApplicationListener<ContextStoppedEvent> {
 
   @Override
   public void onApplicationEvent(ContextStoppedEvent contextStoppedEvent) {

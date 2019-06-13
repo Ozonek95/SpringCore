@@ -1,4 +1,4 @@
-package zadanie_cztery_AOP.pakiet_dwa.aspects;
+package zadanie_cztery_AOP.pakiet_dwa.aspekty;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;

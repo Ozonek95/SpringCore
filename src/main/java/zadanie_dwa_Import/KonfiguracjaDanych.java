@@ -7,9 +7,9 @@ import org.springframework.context.annotation.Configuration;
  * @author Kacper Staszek
  */
 @Configuration
-class DataConfig {
+class KonfiguracjaDanych {
   @Bean
-  DataSource dataSource(){
-    return new DataSourceImpl();
+  ŹródłoDanych źródłoDanych(){
+    return new ŹródłoDanychImpl();
   }
 }

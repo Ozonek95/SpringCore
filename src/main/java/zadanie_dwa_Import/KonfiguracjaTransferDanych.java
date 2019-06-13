@@ -6,18 +6,18 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 /**
- * Zwróć uwagę na autowiązanie dataSource.
+ * Zwróć uwagę na autowiązanie źródłoDanych.
  *
  * @author Kacper Staszek
  */
 @Configuration
-@Import(DataConfig.class)
-class DataTransferConfig {
+@Import(KonfiguracjaDanych.class)
+class KonfiguracjaTransferDanych {
   @Autowired
-  DataSource<Data> dataSource;
+  ŹródłoDanych<Dane> źródłoDanych;
 
   @Bean
-  DataTransferService service(){
-    return new DataTransferServiceImpl(dataSource.getData());
+  TransferDanychSerwis serwis(){
+    return new TransferDanychSerwisImpl(źródłoDanych.pobierzDane());
   }
 }

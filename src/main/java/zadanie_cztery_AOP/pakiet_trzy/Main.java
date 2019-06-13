@@ -14,7 +14,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 class Main {
 
   public static void main(String[] args) {
-    ApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
-    context.getBean(Repository.class).repoMethod();
+    ApplicationContext kontekst = new AnnotationConfigApplicationContext(Main.class);
+    kontekst.getBean(Repozytorium.class).metodaRepozytorium();
   }
 }

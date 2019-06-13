@@ -28,9 +28,9 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 class Main {
 
   public static void main(String[] args) throws Exception {
-    ApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
+    ApplicationContext kontekst = new AnnotationConfigApplicationContext(Main.class);
 
-    Człowiek człowiek = context.getBean(Człowiek.class);
+    Człowiek człowiek = kontekst.getBean(Człowiek.class);
 
     człowiek.setImie("Kacpi");
 
