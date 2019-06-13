@@ -5,17 +5,17 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
-import zadanie_jeden_ComponentScan.pakiet_cztery.Użytkownik;
-import zadanie_jeden_ComponentScan.pakiet_dwa.RepozytoriumUżytkowników;
-import zadanie_jeden_ComponentScan.pakiet_jeden.Logger;
-import zadanie_jeden_ComponentScan.pakiet_pięć.NieChcemyTejKlasy;
-import zadanie_jeden_ComponentScan.pakiet_trzy.Kalkulator;
+import zadanie_jeden_ComponentScan.z_tego_część.NieChcemyTejKlasy;
+import zadanie_jeden_ComponentScan.z_tego_nic.Użytkownik;
+import zadanie_jeden_ComponentScan.z_tego_też_wszystko.RepozytoriumUżytkowników;
+import zadanie_jeden_ComponentScan.z_tego_wszystko.Serwis;
+import zadanie_jeden_ComponentScan.z_tego_wszystko.podpakiet.Kalkulator;
 
 /**
  * Działanie @ComponentScan
  *
  * TODO: Doprowadź program do działania bez rzucania wyjątku. Zauważ, że nie musimy skanować pakietu
- *  "pakiet_cztery". Żeby zaoszczędzić Springowi pracy, zeskanuj tylko potrzebne pakiety.
+ *  "d_własne_adnotacje_i_aspekty". Żeby zaoszczędzić Springowi pracy, zeskanuj tylko potrzebne pakiety.
  *
  * TODO: Kiedy program już działa, zauważ, że tworzymy ziarno "KlasyKtórejNieChcemy". Za pomocą
  *  @ComponentScan.Filter rozwiąż ten problem tak, żeby wciąż tworzyć ziarno KlasaKtoraChcemy.
@@ -24,8 +24,8 @@ import zadanie_jeden_ComponentScan.pakiet_trzy.Kalkulator;
  *
  * @author Kacper Staszek
  */
-@ComponentScan(basePackages = {"zadanie_jeden_ComponentScan.pakiet_jeden", "zadanie_jeden_ComponentScan.pakiet_dwa",
-    "zadanie_jeden_ComponentScan.pakiet_trzy", "zadanie_jeden_ComponentScan.pakiet_pięć"},
+@ComponentScan(basePackages = {"zadanie_jeden_ComponentScan.z_tego_wszystko", "zadanie_jeden_ComponentScan.z_tego_też_wszystko",
+    "zadanie_jeden_ComponentScan.z_tego_część"},
     excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = NieChcemyTejKlasy.class))
 class Main {
 
@@ -34,7 +34,7 @@ class Main {
 
     kontekst.getBean(RepozytoriumUżytkowników.class).zapisz(new Użytkownik("Kacpi"));
 
-    kontekst.getBean(Logger.class).log("prosto z main");
+    kontekst.getBean(Serwis.class).wykonujUsługę();
 
     System.out
         .println(kontekst.getBean(Kalkulator.class).dodaj(new BigDecimal("5"), new BigDecimal("8.5")));
