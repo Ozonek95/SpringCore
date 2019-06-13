@@ -1,0 +1,17 @@
+
+= Warsztaty Spring Core i AOP.
+
+Warsztat pomoże Ci zapoznać się z kilkoma tematami związanymi ze Spring Core.
+Głównie skupimy się na programowaniu aspektowym w Springu.
+
+Zadania znajdują się na gałęzi `master`
+
+Rozwiązania znajdziesz wykonując `git checkout rozwiązania`
+
+.Podjęta w warsztatach tematyka to:
+* ComponentScan - skanowanie komponentów.
+* Adnotacja @Import jako pomoc w konfiguracji.
+* Zdarzenia w Springu, oraz jak możemy na nie reagować.
+* Programowanie aspektowe (Spring AOP).
+
+Poruszaj się po pakietach zgodnie z numeracją zadań. Jeżeli pakiet ma podpakiety z zadaniami, to poruszaj się po nich alfabetycznie.
