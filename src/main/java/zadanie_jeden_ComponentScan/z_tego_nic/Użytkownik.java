@@ -1,4 +1,4 @@
-package zadanie_jeden_ComponentScan.pakiet_cztery;
+package zadanie_jeden_ComponentScan.z_tego_nic;
 
 /**
  * @author Kacper Staszek

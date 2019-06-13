@@ -1,4 +1,4 @@
-package zadanie_jeden_ComponentScan.pakiet_trzy;
+package zadanie_jeden_ComponentScan.z_tego_wszystko.podpakiet;
 
 import java.math.BigDecimal;
 

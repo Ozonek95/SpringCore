@@ -1,4 +1,4 @@
-package zadanie_jeden_ComponentScan.pakiet_dwa;
+package zadanie_jeden_ComponentScan.z_tego_też_wszystko;
 
 import zadanie_jeden_ComponentScan.z_tego_nic.Użytkownik;
 

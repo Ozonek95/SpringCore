@@ -8,10 +8,11 @@ import org.springframework.stereotype.Service;
  * @author Kacper Staszek
  */
 @Service
-class LoggerImpl implements Logger {
+class PrzykładowySerwis implements Serwis {
+
 
   @Override
-  public void log(String wiadomość) {
-    System.out.println("Loguję wiadomość: "+wiadomość);
+  public void wykonujUsługę() {
+    System.out.println("Przykładowa usługa");
   }
 }

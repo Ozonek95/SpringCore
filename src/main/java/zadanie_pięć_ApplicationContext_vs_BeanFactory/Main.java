@@ -1,4 +1,4 @@
-package zadanie_pięć;
+package zadanie_pięć_ApplicationContext_vs_BeanFactory;
 
 /**
  * W tym zadaniu chciałbym zwrócić Twoją uwagę na istotny aspekt.
