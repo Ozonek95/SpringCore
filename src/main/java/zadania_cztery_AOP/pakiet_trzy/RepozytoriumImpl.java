@@ -4,13 +4,15 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.springframework.stereotype.Component;
 
 /**
+ *Przykładowa implementacja na potrzeby zadania.
+ *
  * @author Kacper Staszek
  */
 @Component
-class RepositoryImpl implements Repository {
+class RepozytoriumImpl implements Repozytorium {
 
   @Override
-  public boolean repoMethod() {
+  public boolean metodaRepo() {
     System.out.println("rozpoczynam zapis");
     try {
       Thread.sleep(ThreadLocalRandom.current().nextInt(5000));

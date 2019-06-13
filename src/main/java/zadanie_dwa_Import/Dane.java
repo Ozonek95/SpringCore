@@ -1,8 +1,10 @@
 package zadanie_dwa_Import;
 
 /**
+ * Imituje dane - na potrzeby zadania.
+ *
  * @author Kacper Staszek
  */
-interface DataTransferService<T> {
-  void transferData();
+class Dane {
+
 }

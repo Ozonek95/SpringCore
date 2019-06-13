@@ -9,7 +9,7 @@ import zadania_cztery_AOP.pakiet_cztery.model.Użytkownik;
  * @author Kacper Staszek
  */
 @Repository
-class MyUserRepository implements MyRepository<Użytkownik> {
+class RepozytoriumUżytkowników implements MojeRepozytorium<Użytkownik> {
 
   @Override
   public boolean zapisz(Użytkownik użytkownik) {

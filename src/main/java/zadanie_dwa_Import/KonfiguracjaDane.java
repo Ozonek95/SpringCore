@@ -4,12 +4,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
+ * Implementacja na potrzeby zadania
+ *
  * @author Kacper Staszek
  */
 @Configuration
-class DataConfig {
+class KonfiguracjaDane {
   @Bean
-  DataSource dataSource(){
-    return new DataSourceImpl();
+  ŹródłoDanych źródłoDanych(){
+    return new ŹródłoDanychImpl();
   }
 }

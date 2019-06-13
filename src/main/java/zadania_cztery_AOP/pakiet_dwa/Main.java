@@ -13,7 +13,7 @@ import zadania_cztery_AOP.pakiet_dwa.zwierzaki.Pies;
 /**
  * Poćwiczymy trochę tworzenie pointcut expression i dowiemy się czym jest @Pointcut.
  *
- * TODO:Przejdź do klasy aspects.PrzykładowyAspekt i postępuj zgodnie z instrukcją.
+ * TODO:Przejdź do klasy aspekty.PrzykładowyAspekt i postępuj zgodnie z instrukcją.
  *
  * @author Kacper Staszek
  */

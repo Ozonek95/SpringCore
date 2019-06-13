@@ -1,6 +1,5 @@
 package zadania_cztery_AOP.pakiet_cztery.repozytoria;
 
-import org.springframework.stereotype.Repository;
 import zadania_cztery_AOP.pakiet_cztery.model.Artykuł;
 
 /**
@@ -8,11 +7,10 @@ import zadania_cztery_AOP.pakiet_cztery.model.Artykuł;
  *
  * @author Kacper Staszek
  */
-@Repository
-public class MyArticleRepository implements MyRepository<Artykuł> {
+class RepozytoriumArtykułów implements MojeRepozytorium<Artykuł> {
 
   @Override
-  public boolean zapisz(Artykuł artykuł) {
+  public boolean zapisz(Artykuł obiekt) {
     return true;
   }
 }

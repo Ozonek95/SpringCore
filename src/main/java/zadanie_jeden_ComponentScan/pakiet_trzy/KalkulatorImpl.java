@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
  * @author Kacper Staszek
  */
 @Service
-class CalculatorImpl implements Calculator {
+class KalkulatorImpl implements Kalkulator {
 
   @Override
-  public BigDecimal add(BigDecimal... a) {
+  public BigDecimal dodaj(BigDecimal... a) {
     BigDecimal result = new BigDecimal("0");
     for (BigDecimal bigDecimal : a) {
       result=result.add(bigDecimal);
@@ -19,9 +19,9 @@ class CalculatorImpl implements Calculator {
   }
 
   @Override
-  public BigDecimal subtract(BigDecimal number, BigDecimal... toSubtract) {
-    BigDecimal result = number;
-    for (BigDecimal bigDecimal : toSubtract) {
+  public BigDecimal odejmij(BigDecimal liczba, BigDecimal... doOdjęcia) {
+    BigDecimal result = liczba;
+    for (BigDecimal bigDecimal : doOdjęcia) {
       result=result.subtract(bigDecimal);
     }
     return result;
